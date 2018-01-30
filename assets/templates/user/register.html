@@ -1,0 +1,28 @@
+ <section ng-controller = "userCtrl">
+	<div id="agileits-sign-in-page" class="sign-in-wrapper">
+		<div class="agileinfo_signin">
+		<h3>Sign Up</h3>
+			<form method="post" name= "registerForm" novalidate ng-submit ="register()">
+				<input type="text" name="registerName" ng-model="registerName" pattern ="[a-z A-Z]{3,}" placeholder="Your Name" required=""> 
+				<p class="text-danger" ng-show = "registerForm.registerName.$touched && registerForm.registerName.$invalid">User Name is not valid. User should contain 3 characters</p>
+				<input id ="asdfghj"  type="email" name="registerEmail" ng-model="registerEmail" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+				<p class="text-danger" ng-show = "registerForm.registerEmail.$touched && registerForm.registerEmail.$invalid">Email is Invalid</p>
+				<input type="tel" name="registerTel" ng-model="registerTel" placeholder="Mobile"  pattern="^[1-9]{1}[0-9]{9}$" required>
+				<p ng-show ="registerForm.registerTel.$touched && registerForm.registerTel.$invalid" class="text-danger">Mobile should be 10 digit lognger</p>
+				<input type="password" name="registerPassword" ng-model="registerPassword" placeholder="Password" ng-keyup = "confirmPassword()" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$" required>
+				<p ng-show ="registerForm.registerPassword.$touched && registerForm.registerPassword.$invalid" class="text-danger">Password must contain Minimum 8 characters at least 1 Alphabet, 1 Number and 1 Special Character</p>
+				<input type="password" name="registerCPassword" ng-model="registerCPassword" placeholder="Confirm Password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$" compare-to="registerPassword">
+				<p class="text-danger" ng-show ="registerForm.registerCPassword.$invalid && registerForm.registerPassword.$touched">Password not matched</p>
+
+				<div class="signin-rit">
+					<span class="agree-checkbox">
+						<label class="checkbox"><input type="checkbox" ng-init='checkStatus=false' ng-click='doIfChecked()' ng-model="registerCheckbox"  name="registerCheckbox" required>I agree to your <a class="w3layouts-t" href="terms.html" target="_blank">Terms of Use</a> and <a class="w3layouts-t" href="privacy.html" target="_blank">Privacy Policy</a></label>
+					</span>
+					<p class="text-danger" ng-show= "responseMsgVisible">Email is already taken</p>
+				</div>
+				<input type="submit" value="Sign Up" ng-disabled ="registerForm.$invalid">
+				
+			</form>
+		</div>
+	</div>
+</section>

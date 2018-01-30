@@ -1,0 +1,30 @@
+{
+  "name": "OpenShift-Sample-App",
+  "version": "1.0.0",
+  "description": "OpenShift Sample Application",
+  "dependencies": {
+    "ejs": "0.8.4",
+    "grunt-cli": ">=0.1.13",
+    "grunt": "~0.4.4",
+    "optimist": "0.3.4",
+    "sails": ">=0.9.16",
+    "sails-disk": ">=0.9.0",
+    "sails-mongo": ">=0.9.8"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Pointters",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "private": true,
+  "homepage": ""
+}

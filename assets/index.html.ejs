@@ -1,0 +1,231 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Resale_v2 a Classified ads Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<link rel="stylesheet" href="css/bootstrap.min.css"><!-- bootstrap-CSS -->
+<link rel="stylesheet" href="css/bootstrap-select.css"><!-- bootstrap-select-CSS -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- style.css -->
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" /><!-- flexslider-CSS -->
+<link rel="stylesheet" href="css/font-awesome.min.css" /><!-- fontawesome-CSS -->
+<link rel="stylesheet" href="css/menu_sideslide.css" type="text/css" media="all"><!-- Navigation-CSS -->
+<link rel="stylesheet" href="css/loading-bar.min.css" type="text/css" media="all"><!-- Navigation-CSS -->
+
+<!-- meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+<!-- //meta tags -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>	
+<script type="text/javascript" src="js/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/angular/angular-route.js"></script>
+<script type="text/javascript" src="js/angular/ngStorage.min.js"></script>
+<script type="text/javascript" src="js/angular/angular-cookie.js"></script>
+<script type="text/javascript" src="js/angular/ng-token-auth.min.js"></script>
+<script type="text/javascript" src="js/angular/loading-bar.min.js"></script>
+<script type="text/javascript" src="js/angular/angular-animate.js"></script>
+
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/routes.js"></script>
+
+<!-- header js -->
+<script type="text/javascript" src="templates/header/header.module.js"></script>
+<script type="text/javascript" src="templates/header/header.route.js"></script>
+<script type="text/javascript" src="templates/header/header.js"></script>
+<!-- header js -->
+
+<!-- service -->
+<script type="text/javascript" src="js/services/auth.js"></script>
+<script type="text/javascript" src="js/factories/httpHandler.js"></script>
+<!-- header js -->
+<script type="text/javascript" src="templates/footer/footer.js"></script>
+<!-- header js -->
+
+<!-- dashboard -->
+<script type="text/javascript" src="templates/dashboard/dashboard.module.js"></script>
+
+<!-- user -->
+<script type="text/javascript" src="templates/user/user.module.js"></script>
+<script type="text/javascript" src="templates/user/user.route.js"></script>
+<script type="text/javascript" src="templates/user/user.js"></script>
+
+
+</head>
+<body ng-app="classifiedApp">	
+		<!-- Navigation -->
+		<div class="agiletopbar">
+			<div class="wthreenavigation">
+				<div class="menu-wrap">
+				<nav class="menu">
+					<div class="icon-list">
+						<a href="mobiles.html"><i class="fa fa-fw fa-mobile"></i><span>Mobiles</span></a>
+						<a href="electronics-appliances.html"><i class="fa fa-fw fa-laptop"></i><span>Electronics and appliances</span></a>
+						<a href="cars.html"><i class="fa fa-fw fa-car"></i><span>Cars</span></a>
+						<a href="bikes.html"><i class="fa fa-fw fa-motorcycle"></i><span>Bikes</span></a>
+						<a href="furnitures.html"><i class="fa fa-fw fa-wheelchair"></i><span>Furnitures</span></a>
+						<a href="pets.html"><i class="fa fa-fw fa-paw"></i><span>Pets</span></a>
+						<a href="books-sports-hobbies.html"><i class="fa fa-fw fa-book"></i><span>Books, Sports & Hobbies</span></a>
+						<a href="fashion.html"><i class="fa fa-fw fa-asterisk"></i><span>Fashion</span></a>
+						<a href="kids.html"><i class="fa fa-fw fa-asterisk"></i><span>Kids</span></a>
+						<a href="services.html"><i class="fa fa-fw fa-shield"></i><span>Services</span></a>
+						<a href="jobs.html"><i class="fa fa-fw fa-at"></i><span>Jobs</span></a>
+						<a href="real-estate.html"><i class="fa fa-fw fa-home"></i><span>Real Estate</span></a>
+					</div>
+				</nav>
+				<button class="close-button" id="close-button">Close Menu</button>
+			</div>
+			<button class="menu-button" id="open-button"> </button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- //Navigation -->
+	<!-- header -->
+	<header-element></header-element>
+	<!-- //header -->
+	<!-- Slider -->
+		<div ng-view></div>
+
+		<!--footer section start-->		
+		<footer-element></footer-element>
+    <!--footer section end-->
+		<!-- Navigation-Js-->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/classie.js"></script>
+		<!-- //Navigation-Js-->
+		<!-- js -->
+		
+		<!-- js -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+		<script>
+		  $(document).ready(function () {
+			var mySelect = $('#first-disabled2');
+
+			$('#special').on('click', function () {
+			  mySelect.find('option:selected').prop('disabled', true);
+			  mySelect.selectpicker('refresh');
+			});
+
+			$('#special2').on('click', function () {
+			  mySelect.find('option:disabled').prop('disabled', false);
+			  mySelect.selectpicker('refresh');
+			});
+
+			$('#basic2').selectpicker({
+			  liveSearch: true,
+			  maxOptions: 1
+			});
+		  });
+		</script>
+		<!-- language-select -->
+		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+		<link href="css/jquery.uls.css" rel="stylesheet"/>
+		<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+		<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+		<!-- Source -->
+		<script src="js/jquery.uls.data.js"></script>
+		<script src="js/jquery.uls.data.utils.js"></script>
+		<script src="js/jquery.uls.lcd.js"></script>
+		<script src="js/jquery.uls.languagefilter.js"></script>
+		<script src="js/jquery.uls.regionfilter.js"></script>
+		<script src="js/jquery.uls.core.js"></script>
+		<script>
+					$( document ).ready( function() {
+						$( '.uls-trigger' ).uls( {
+							onSelect : function( language ) {
+								var languageName = $.uls.data.getAutonym( language );
+								$( '.uls-trigger' ).text( languageName );
+							},
+							quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+						} );
+					} );
+				</script>
+		<!-- //language-select -->
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script><!-- flexisel-js -->	
+					<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:1,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 5000,    		
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: { 
+									portrait: { 
+										changePoint:480,
+										visibleItems:1
+									}, 
+									landscape: { 
+										changePoint:640,
+										visibleItems:1
+									},
+									tablet: { 
+										changePoint:768,
+										visibleItems:1
+									}
+								}
+							});
+							
+						});
+					   </script>
+		<!-- Slider-JavaScript -->
+			
+			 <script>
+			$(function () {	
+			  $("#slider").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				maxwidth: 800,
+				namespace: "large-btns"
+			  });
+
+			});
+		  </script>
+		<!-- //Slider-JavaScript -->
+		<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+					*/
+										
+					$().UItoTop({ easingType: 'easeOutQuart' });
+										
+					});
+			</script>
+			<!-- start-smoth-scrolling -->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+			<!-- start-smoth-scrolling -->
+		<!-- //here ends scrolling icon -->
+</body>		
+</html>
